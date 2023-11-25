@@ -1,0 +1,16 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+
+    &__photo {
+        min-width: 200px;
+        max-width: 400px;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+
+    &__header,
+    &__text {
+        margin-bottom: 15px !important; // Override MUI styling
+    }
+}
