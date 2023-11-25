@@ -1,0 +1,12 @@
+.navbar {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+    padding: 22px 30px;
+
+
+    &__logo {
+        max-width: 100px; // To avoid it to grow in Safari browser
+    }
+}

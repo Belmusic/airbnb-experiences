@@ -1,0 +1,34 @@
+/* Typography */
+
+// Define custom font faces
+@font-face {
+    font-family: 'AirbnbCereal_W_Bold';
+    src: local ('AirbnbCereal_W_Bold')url('@/assets/fonts/AirbnbCereal_W_Bold.otf') format('opentype');
+    font-weight: 700; // Use 700 for bold
+    font-display: swap; // Optimize web performance and font display
+}
+
+@font-face {
+    font-family: 'AirbnbCereal_W_Medium';
+    src: local ('AirbnbCereal_W_Medium')url('@/assets/fonts/AirbnbCereal_W_Medium.otf') format('opentype');
+    font-weight: 500; // Use 500 for regular (medium)
+    font-display: swap; // Optimize web performance and font display
+}
+
+@font-face {
+    font-family: 'AirbnbCereal_W_Light';
+    src: local ('AirbnbCereal_W_Light')url('@/assets/fonts/AirbnbCereal_W_Light.otf') format('opentype');
+    font-weight: 300; // Use 300 for light
+    font-display: swap; // Optimize web performance and font display
+}
+
+// Set the body font with fallbacks
+body {
+    font-family: 'AirbnbCereal_W_Medium', sans-serif;
+}
+
+// Define font variables for easy reference and maintenance
+$fallback: sans-serif;
+$font-bold: 'AirbnbCereal_W_Bold', $fallback;
+$font-regular: 'AirbnbCereal_W_Medium', $fallback;
+$font-light: 'AirbnbCereal_W_Light', $fallback;
