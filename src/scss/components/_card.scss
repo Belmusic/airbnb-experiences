@@ -1,0 +1,26 @@
+.card {
+    border-radius: 9px;
+
+    &__image {
+        max-height: 200px;
+        margin: 25px 0 10px;
+    }
+
+    &__stats {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 12px;
+        }
+
+        .star {
+            max-height: 14px;
+        }
+
+        .grey {
+            color: var(--light-grey);
+        }
+    }
+}

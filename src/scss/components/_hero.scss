@@ -13,4 +13,8 @@
     &__text {
         margin-bottom: 15px !important; // Override MUI styling
     }
+
+    &__text {
+        max-width: 300px;
+    }
 }
