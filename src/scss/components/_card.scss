@@ -2,8 +2,9 @@
     border-radius: 9px;
 
     &__image {
-        max-height: 200px;
-        margin: 25px 0 10px;
+        height: 235px;
+        width: 176px;
+        border-radius: 9px;
     }
 
     &__stats {
@@ -13,6 +14,8 @@
 
         span {
             font-size: 12px;
+            display: flex;
+            align-items: center;
         }
 
         .star {
@@ -23,4 +26,8 @@
             color: var(--light-grey);
         }
     }
+}
+
+.cards {
+    display: flex;
 }
