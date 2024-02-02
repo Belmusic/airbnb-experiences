@@ -1,21 +1,40 @@
 import { Typography } from "@mui/material";
-import Swimmer from "../assets/images/swimmer.png";
-import Star from "../assets/images/star.png";
+import React from "react";
+import Star from "../../public/images/star.png";
 
-function Card() {
+interface CardProps {
+  img: string;
+  rating: number;
+  reviewCount: number;
+  location: string;
+  title: string;
+  price: number;
+}
+
+const Card: React.FC<CardProps> = ({
+  img,
+  rating,
+  reviewCount,
+  location,
+  title,
+  price,
+}: CardProps) => {
   return (
     <div className="card">
-      <img src={Swimmer} className="card__image" />
-      <div className="card--stats">
-        <img src={Star} className="card__star" />
-        <span>5.0</span>
-        <span>(6) • </span>
-        <span>USA</span>
+      <img src={`/images/${img}?url`} className="card__image" alt={title} />
+      <div className="card__stats">
+        <img src={Star} className="star" alt="Star" />
+        <span>{rating}</span>
+        <span className="grey">({reviewCount}) • </span>
+        <span className="grey">{location}</span>
       </div>
-      <Typography variant="body1">Life Lessons with Katie Zaferes</Typography>
-      <Typography variant="body1">From $136 / person</Typography>
+      <Typography variant="h4">{title}</Typography>
+      <Typography variant="h4">
+        <strong>From ${price} / </strong>
+        person
+      </Typography>
     </div>
   );
-}
+};
 
 export default Card;

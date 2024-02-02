@@ -1,0 +1,33 @@
+.card {
+    border-radius: 9px;
+
+    &__image {
+        height: 235px;
+        width: 176px;
+        border-radius: 9px;
+    }
+
+    &__stats {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .star {
+            max-height: 14px;
+        }
+
+        .grey {
+            color: var(--light-grey);
+        }
+    }
+}
+
+.cards {
+    display: flex;
+}

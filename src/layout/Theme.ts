@@ -12,16 +12,18 @@ export const theme = createTheme({
             fontWeight: 'bold',
         },
          h4: {
-            fontFamily: FontBold,
-            fontSize: '16px',
+            fontFamily: FontLight,
+            fontSize: '12px',
             color: DarkGrey,
+            marginBottom: '10px',
+            fontWeight: '300',
         },
         h6: {
             fontFamily: FontLight,
             fontSize: '12px',
             color: LightGrey,
         },
-        body1: { // <p></p> tag
+        body1: { // <p> tag
             fontFamily: FontLight,
             fontSize: '16px',
             color: DarkGrey,

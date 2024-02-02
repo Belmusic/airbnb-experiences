@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import PhotoGrid from "../assets/images/photo-grid.png";
+import PhotoGrid from "../../public/images/photo-grid.png";
 
 function Hero() {
   return (
